@@ -75,7 +75,7 @@
     <link href="http://example.com/2021/02/24/%E6%90%AD%E5%BB%BA%E7%BB%8F%E9%AA%8C/"/>
     <id>http://example.com/2021/02/24/%E6%90%AD%E5%BB%BA%E7%BB%8F%E9%AA%8C/</id>
     <published>2021-02-24T13:59:09.075Z</published>
-    <updated>2021-02-28T09:03:22.732Z</updated>
+    <updated>2021-02-28T09:16:42.140Z</updated>
     
     <content type="html"><![CDATA[<p>学习信息安全的开始从更新博客做起</p>        <h2 id="搭建博客"   >          <a href="#搭建博客" class="heading-link"><i class="fas fa-link"></i></a><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h2>              <h3 id="搭建博客的辛酸历程"   >          <a href="#搭建博客的辛酸历程" class="heading-link"><i class="fas fa-link"></i></a><a href="#搭建博客的辛酸历程" class="headerlink" title="搭建博客的辛酸历程"></a>搭建博客的辛酸历程</h3>      <p>虽然搭建博客的过程充满了各种各样的问题，但是搭建成功的那一刻真的爽！</p><figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$搭建经验</span><br></pre></td></tr></table></div></figure>]]></content>
     
@@ -92,6 +92,8 @@
     
     <category term="博客搭建" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
+    
+    <category term="搭建经验" scheme="http://example.com/tags/%E6%90%AD%E5%BB%BA%E7%BB%8F%E9%AA%8C/"/>
     
   </entry>
   
