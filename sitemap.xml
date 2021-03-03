@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2021/03/03/%E4%BF%A1%E5%AE%89-%E6%B8%97%E9%80%8F%E7%AF%87%EF%BC%9A%E6%B8%97%E9%80%8F%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2021-03-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2021/03/02/%E4%BF%A1%E5%AE%89-%E4%BB%A3%E7%A0%81%E7%AF%87%EF%BC%9APHP%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%934/</loc>
     
     <lastmod>2021-03-02</lastmod>
@@ -116,7 +123,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-03-02</lastmod>
+    <lastmod>2021-03-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -124,21 +131,28 @@
   
   <url>
     <loc>http://example.com/tags/%E4%BB%A3%E7%A0%81%E7%AF%87/</loc>
-    <lastmod>2021-03-02</lastmod>
+    <lastmod>2021-03-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E5%9F%BA%E7%A1%80%E7%AF%87/</loc>
-    <lastmod>2021-03-02</lastmod>
+    <lastmod>2021-03-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/blogbuild/</loc>
-    <lastmod>2021-03-02</lastmod>
+    <lastmod>2021-03-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/%E6%B8%97%E9%80%8F%E7%AF%87/</loc>
+    <lastmod>2021-03-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -147,21 +161,28 @@
   
   <url>
     <loc>http://example.com/categories/%E4%BB%A3%E7%A0%81%E7%AF%87/</loc>
-    <lastmod>2021-03-02</lastmod>
+    <lastmod>2021-03-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/%E5%9F%BA%E7%A1%80%E7%AF%87/</loc>
-    <lastmod>2021-03-02</lastmod>
+    <lastmod>2021-03-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/blogbuild/</loc>
-    <lastmod>2021-03-02</lastmod>
+    <lastmod>2021-03-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E6%B8%97%E9%80%8F%E7%AF%87/</loc>
+    <lastmod>2021-03-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
