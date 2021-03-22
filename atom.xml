@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-22T09:41:40.217Z</updated>
+  <updated>2021-03-22T15:29:19.365Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DVWA</title>
+    <link href="http://example.com/2021/03/22/%E9%80%9A%E5%85%B3%E7%AC%94%E8%AE%B0DVWA-XSS/"/>
+    <id>http://example.com/2021/03/22/%E9%80%9A%E5%85%B3%E7%AC%94%E8%AE%B0DVWA-XSS/</id>
+    <published>2021-03-22T15:27:24.708Z</published>
+    <updated>2021-03-22T15:29:19.365Z</updated>
+    
+    <content type="html"><![CDATA[<p>学习信息安全的开始从更新博客做起</p>        <h2 id="代码：DVWA"   >          <a href="#代码：DVWA" class="heading-link"><i class="fas fa-link"></i></a><a href="#代码：DVWA" class="headerlink" title="代码：DVWA"></a>代码：DVWA</h2>              <h3 id="靶场"   >          <a href="#靶场" class="heading-link"><i class="fas fa-link"></i></a><a href="#靶场" class="headerlink" title="靶场"></a>靶场</h3>      <p>DVWA-XSS</p><p>DOM型XSS<br>low：直接用标签<br>media：闭合<script>和<select><br>high：利用服务器无视＃之后的代码进行绕过</p><p>反射型xss<br>low：直接用标签<br>media：过滤<script>标签，采用大小写或者双写都可以通过<br>high：完全禁用script标签的所有字母及大小写，所以用其他标签替换</p><p>存储型xss<br>low：直接用标签<br>media：massage被实体化编码，但是name只过滤<script>标签，采用大小写或者双写都可以通过<br>high：massage被实体化编码，而且name完全禁用script标签的所有字母及大小写，所以用其他标签替换</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;学习信息安全的开始从更新博客做起&lt;/p&gt;
+
+        &lt;h2 id=&quot;代码：DVWA&quot;   &gt;
+          &lt;a href=&quot;#代码：DVWA&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a hr</summary>
+      
+    
+    
+    
+    <category term="渗透篇" scheme="http://example.com/categories/%E6%B8%97%E9%80%8F%E7%AF%87/"/>
+    
+    
+    <category term="渗透篇" scheme="http://example.com/tags/%E6%B8%97%E9%80%8F%E7%AF%87/"/>
+    
+  </entry>
   
   <entry>
     <title>xsschallenge</title>
