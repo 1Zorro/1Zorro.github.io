@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-07T11:54:07.189Z</updated>
+  <updated>2021-03-22T09:41:40.217Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>xsschallenge</title>
+    <link href="http://example.com/2021/03/22/%E9%80%9A%E5%85%B3%E7%AC%94%E8%AE%B0xsschallenge/"/>
+    <id>http://example.com/2021/03/22/%E9%80%9A%E5%85%B3%E7%AC%94%E8%AE%B0xsschallenge/</id>
+    <published>2021-03-22T09:39:35.461Z</published>
+    <updated>2021-03-22T09:41:40.217Z</updated>
+    
+    <content type="html"><![CDATA[<p>学习信息安全的开始从更新博客做起</p>        <h2 id="代码：xsschallenge"   >          <a href="#代码：xsschallenge" class="heading-link"><i class="fas fa-link"></i></a><a href="#代码：xsschallenge" class="headerlink" title="代码：xsschallenge"></a>代码：xsschallenge</h2>              <h3 id="靶场"   >          <a href="#靶场" class="heading-link"><i class="fas fa-link"></i></a><a href="#靶场" class="headerlink" title="靶场"></a>靶场</h3>      <p>XSSchallenge</p><p>第一关<br>1.无害化输入<br>2.检查html代码<br>3.输入内容在<b>标签内被双引号包裹<br>方法：利用双引号闭合</p><p>第二关<br>1.无害化输入<br>2.检查html代码<br>3.输入内容被传入input标签内的value参数内，并且被双引号包裹<br>方法一：利用双引号和尖括号对input进行闭合操作<br>方法二：利用双引号闭合value参数后的双引号，再添加鼠标事件进行弹窗</p><p>第三关<br>1.无害化输入<br>2.检查html代码<br>3.输入内容在<b>标签内被双引号包裹<br>4.发现无效，输入被实体化编码<br>方法：尝试对下拉列表进行插入，抓包</p><p>第四关<br>1.无害化输入<br>2.检查html代码<br>3.尝试对下拉列表进行插入，抓包<br>4.尝试在传入参数外添加xss，无法写入（可能被过滤）失败<br>方法：发现隐藏参数，通过查看html代码进行观察，闭合标签</p><p>第五关<br>1.无害化输入<br>2.检查html代码<br>3.输入内容被传入input标签内的value参数内，并且被双引号包裹，有长度限制<br>方法：更改长度限制，添加事件</p><p>第六关<br>1.无害化输入<br>2.检查html代码<br>3.输入内容被传入input标签内的value参数内，并且被双引号包裹<br>方法：添加事件</p><p>第七关<br>1.无害化输入<br>2.检查html代码<br>3.输入内容被传入input标签内的value参数内，并且被双引号包裹<br>方法一：添加事件<br>方法二：利用空格，在参数后加上空格，使之后的数据被当成参数插入标签内</p><p>第八关<br>1.无害化输入<br>2.检查html代码<br>3.尖括号被转义，发现输入的url被放在了a标签中的href中<br>方法：尝试用其他协议进行绕过<br>payload：javascript:alert(document.domain);</p><p>第九关<br>1.无害化输入<br>2.检查html代码<br>utf-7 无法实现<br>随便添加on事件绕过</p><p>第十关<br>1.无害化输入<br>2.检查html代码<br>3.domain被过滤<br>方法一：”&gt;<script>eval(atob("YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ=="))</script>&lt;”<br>eval执行JavaScript代码<br>将要执行的代码进行base64进行编码，然后atob进行解码，再用eval进行执行<br>方法二：111” onclick=alert(document.domdomainain) “</p><p>十一关<br>无法使用</p><p>十二关<br>利用旧版ie浏览器<code>进行闭合双引号 ie 两个反引号</code> 可以闭合左边的双引号<br>``onmouseover=alert(document.domain)</p><p>十三关<br>利用低版本ie<br>background-color:salmon;background:url(“javascript:alert(document.domain);”):</p><p>十四关<br>利用低版本的expression函数<br>css特性绕过（低版本ie支持），css可以配合各种脚本语言动态对页面的元素进行格式化<br>IE中CSS特性触发XSS<br>　　层叠样式表（英文全称：Cascading Style Sheets）是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本动语言态地对网页各个元素进行格式化。</p><p>　　css expression（css表达式）又称Dynamic properties（动态属性）是早期微软DHTML的产物，以其可以在css中定义表达式来达到建立元素间属性之间的联系等作用，从IE5开始得到支持，后因标准、性能、安全性等问题，微软从IE8 beta2标准开始，取消对css expression的支持。<br>　　实际应用，早期很多开发人员利用css expression实现了许多效果，比如将元素相对鼠标指针进行定位，根据一个定时器来移动元素等等。当然这些效果能够使用js效果来实现。虽然css表达式问题很多，但是我们依然能够在网上看到他们的影子，甚至在一些成熟的商业网站上。最常见的一个应用就是悬浮在页面上的某个模块（比如导航、返回顶部等）。<br>payload:background-color:salmon;xss:ex/**/pression(if(!window.x){alert(document.domain);window.x=1})</p><p>十五关<br>过滤尖括号，使用编码加转义符号的方式进行<br>“）\x3cscript\x3ealert(1);\x3c/script\x3e （”</p><p>十六关</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;学习信息安全的开始从更新博客做起&lt;/p&gt;
+
+        &lt;h2 id=&quot;代码：xsschallenge&quot;   &gt;
+          &lt;a href=&quot;#代码：xsschallenge&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-lin</summary>
+      
+    
+    
+    
+    <category term="渗透篇" scheme="http://example.com/categories/%E6%B8%97%E9%80%8F%E7%AF%87/"/>
+    
+    
+    <category term="渗透篇" scheme="http://example.com/tags/%E6%B8%97%E9%80%8F%E7%AF%87/"/>
+    
+  </entry>
   
   <entry>
     <title>2.抓包工具</title>
